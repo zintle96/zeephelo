@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel='stylesheet'href='AboutUs_style.css'/>
+</head>
+
+<body>
+    <div class="background-div">
+        <div class="nav-bar">
+            <div><a href="Home.html">Home</a></div>
+            <div><a href="#aboutus">AboutUs</a></div>
+            <div><a href="event.html">Events</a></div> 
+        </div>
+
+        <div class='mission-vision'>
+            <div class='vision'>
+            <h1>VISION</h1>
+                <p>Our vision at Mzamomtsha Primary School is to empower students to acquire,<br> demonstrate, articulate and value knowledge and skills 
+                    that will support them, as life-long learners,<br> to participate in and contribute to the global world and practice the core values of the <br>school:
+                    respect, tolerance & inclusion, and excellence.</p>
+            </div>
+
+            <div class='mission'>
+                <h1>MISSION</h1>
+                <p>Our mission is to develop students with active and creative minds,<br> a sense of understanding and compassion for others, and the courage to act on their beliefs.<br>
+                    We stress the total development of each child:<br> spiritual, moral, intellectual, social, emotional, and physical.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+
+     <!--THIS DIV BOX IS THE CREATION OF THE SLIDESHOW CONTAINING PICTURES OF THE PRINCIPAL AND THE LEARNERS.-->
+     <div class="slideshow-container">
+        <!--EACH PICTURE HAS ITS OWN DIV BOX.-->
+        <div class="mySlides fade">
+            <div class="number-text">1 / 5</div>
+            <img src="Images/mzm.jfif" width="800px" height="500px">
+            <div class="text">Mzamomtsha Primary School</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="number-text">2 / 5</div>
+            <img src="Images/principal_students.jpg" width="800px" height="500px">
+            <div class="text">Students</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="number-text">3 / 5</div>
+            <img src="Images/mzamomtsha learners.jfif" width="800px" height="500px">
+            <div class="text">Mzamomtsha Learners</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="number-text">4 / 5</div>
+            <img src="Images/images.jfif" width="800px" height="500px">
+            <div class="text">Mzamomtsha Learners</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="number-text">5 / 5</div>
+            <img src="Images/school.jpg" width="800px" height="500px">
+            <div class="text">School Building</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+        <!--THE CODE BELOW IS THE JAVASCRIPT CODE THAT ENHANCES THE DISPLAY OF THE SLIDESHOW.-->
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+            }
+        </script>
+    </div>
+
+    <div class= 'who-we-are'>
+        <h1>WHO WE ARE</h1> 
+        <p>Mzamomtsha Primary School is located between Khayelistha Township and Umfuleni Township in the Western Cape Province of the Republic of South Africa.
+            <br> The schools headmaster, Mr. Simphiwe Khuze, joined in 2007. The school is located in a semi-township called Drift Sands which started off as an informal 
+            settlement.<br> Drift Sands has since been developed and with support from the South African government it turned into a sprawling township with state of the art
+             housing units.<br> Mzamomtsha Primary School is plays a key role in Drift Sands and is supporting the local community.<br><br>
+
+            The school was initially created for primary school students from grade 1 to grade 7,<br> but due to the rapid population growth (births and migration)
+             the school is also enrolling higher grades. <br>Students are allowed up to grade 12 - which is the metric year.<br><br>
+            
+            The rapid growth has lead to a series of problems for the Mzamomtsha Primary School.<br> There are not enough classrooms to begin with and Mzamomtsha Primary School 
+            has no online presence. <br>Besides, they can not find sufficient staff members to match the continuous growth.<br> The school has 700 learners and a staff of 20 teachers.</p>
+    </div>    
+
+    <div class='contact-section'>
+
+        <div class='contacts'>
+            <ul>
+                <li> &#9743; Tel: 021 910 0721</li>
+                <li>Fax: 021 910 0601</li>
+                <li>Email: mzamomtsha@gmail.com</li>
+            </ul>
+        </div>
+
+        <div class='social-media'>
+            <img src='Images/facebook.png'>
+            <img src='Images/instagram.png'>
+            <img src='Images/twitter.png'>
+        </div>
+
+        <div class="faq-button">
+            <div><a href="#faq">FAQ</a></div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

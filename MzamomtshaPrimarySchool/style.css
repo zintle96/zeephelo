@@ -1,0 +1,79 @@
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.637),rgba(0, 0, 0, 0.753)), url(Images/background-image.jpg) ;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    text-align: left;
+    line-height: 45px;
+    font-size: 30px;
+    padding: 20px 30px 20px 30px;
+}
+
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid white;
+    padding: 10px 20px 10px 20px;
+    margin: 0 20px 0 0;
+}
+
+.nav-bar a:hover{
+    color: black;
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+}
+
+.school-logo {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid white; */
+    padding: 30px 0 30px 0; 
+}
+.school-logo img{
+    height:250px;
+}
+
+
+.school-title {
+    text-align: center;
+    color: white;
+}
+.contacts {
+    /* border: 1px solid white; */
+    color: white;
+    
+}
+.social-media img {
+    height: 40px;
+    width: 50px;
+    padding: 0 10px 0 10px;
+
+}
+
+.faq-button {
+    margin-right: 30px;
+}
+
+.faq-button a {
+color: white;
+font-size: 20px;
+text-align: right;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
